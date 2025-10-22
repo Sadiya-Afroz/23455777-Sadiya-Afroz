@@ -1,1 +1,51 @@
+Tool: Chatgpt
+Date: 19-10-2025
 
+me:How can my program understand natural language questions like “Will it rain tomorrow in Perth?
+AI: To make your program understand a question like “Will it rain tomorrow in Perth?”, you need natural language understanding (NLU).
+
+Extract intent → understand what the user wants (e.g., weather forecast).
+
+Extract entities → find details like location (“Perth”) and time (“tomorrow”).
+
+Convert those into structured data → for example:
+
+intent: check_rain
+
+city: Perth
+
+date: 2025-10-23
+
+Query the weather API (like wttr.in) with those details.
+
+Interpret the result — if forecast mentions “rain”, answer “Yes, it will rain.”
+
+You can do this easily with tools like spaCy, Hugging Face Transformers, or simple keyword detection.
+
+
+me: What’s a simple way to detect if the question is about temperature, rain, wind, or humidity?
+AI: A simple way is to use keyword-based intent detection — quick and effective for weather apps.
+
+Here’s how it works 👇
+
+Define keyword groups:
+
+Temperature → ["temperature", "hot", "cold", "warm", "cool"]
+
+Rain → ["rain", "raining", "precipitation", "wet"]
+
+Wind → ["wind", "breeze", "gust"]
+
+Humidity → ["humidity", "moisture", "humid"]
+
+Check which group matches the user’s question:
+
+If the text contains a rain-related word → intent = "rain"
+
+If it has a temperature-related word → intent = "temperature"
+
+And so on.
+
+Return the detected intent and handle it accordingly in your API logic.
+
+💡 For better accuracy later, you can upgrade to NLP models (like spaCy text classification or transformer-based intent detection), but simple keyword matching is fast and works well for weather queries.
