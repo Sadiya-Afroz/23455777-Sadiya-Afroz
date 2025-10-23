@@ -1,6 +1,5 @@
-# 🌦️ WeatherWise Template
-
-Welcome to the **WeatherWise Assignment Starter Template**! This repository helps you kickstart your project by combining Python, weather APIs, data visualisation, and AI-assisted development. 🤖📊
+# 🌦️ WeatherWise Assignment
+The complete output to the **WeatherWise Assignment**! 🤖📊
 
 ![Build With AI](https://img.shields.io/badge/Built_with-AI-blueviolet?logo=openai)
 ![Python](https://img.shields.io/badge/Made_with-Python-3776AB?logo=python)
@@ -8,11 +7,20 @@ Welcome to the **WeatherWise Assignment Starter Template**! This repository help
 
 ---
 
-## 🚀 How to Use This Template
 
-1. Click **"Use this template"** on GitHub to create your own copy.
-2. Rename your repository to something like `weatherwise-jane-doe`.
-3. Clone it and start developing in `starter_notebook.ipynb`.
+## Requirements of thir project
+
+1. Python3
+2. matplotlib
+3. ollama
+4. pyinputplus
+5. PyInputPlus
+
+## 🚀 How to Run this project
+
+1. To run this project we have `OLLAMA_API_KEY`, the included .env file has the key if needed. Set it to enviroment variable.
+2. Run the notebook by cells from top to bottom.
+3. The main application logic part handles the main menu system
 
 ---
 
@@ -29,10 +37,7 @@ Welcome to the **WeatherWise Assignment Starter Template**! This repository help
 
 ---
 
-📄 **Quick Overview:**  
-A one-page summary of the full assignment is available in [`resources/assignment-summary.md`](resources/assignment-summary.md).
 
----
 
 ## 📓 Submission Checklist
 
