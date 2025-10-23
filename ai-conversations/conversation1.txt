@@ -1,6 +1,9 @@
-tool: Chatgpt
+Tool: Chatgpt
 Date: 19.10 2025
-me: How can I fetch live weather data in Python for my WeatherWise app?
+Title: About fetching weather data
+
+
+Me: How can I fetch live weather data in Python for my WeatherWise app?
 AI: Fetch Live Weather in Python (Example with OpenWeatherMap)
 
 Get an API key: https://openweathermap.org/api
@@ -8,7 +11,6 @@ Get an API key: https://openweathermap.org/api
 Install dependency:
 
 pip install requests
-
 
 Code:
 
@@ -22,7 +24,9 @@ res = requests.get(URL).json()
 print(f"{CITY}: {res['weather'][0]['description']}, {res['main']['temp']}°C")
 
 
-me: What’s the easiest way to connect to the wttr.in API and get JSON results?
+
+
+Me: What’s the easiest way to connect to the wttr.in API and get JSON results?
 AI: The easiest way to get weather data from wttr.in as JSON is with a simple HTTP request — no API key needed!
 
 Here’s how 👇
@@ -50,7 +54,10 @@ No authentication or setup needed.
 Would you like a version that handles errors or missing cities gracefully?
 
 
-me: What should I do if the API returns an error or no data?
+
+
+
+Me: What should I do if the API returns an error or no data?
 AI:
 Here’s how you can safely handle errors or missing data from wttr.in:
 
